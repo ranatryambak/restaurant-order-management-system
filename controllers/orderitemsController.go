@@ -79,7 +79,7 @@ func GetOrderItemsByOrder() gin.HandlerFunc {
 			return
 		}
 
-		c.JSON(http.StatusInternalServerError,allOrderItems)
+		c.JSON(http.StatusOK,allOrderItems)
 	}
 }
 
